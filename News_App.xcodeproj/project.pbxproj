@@ -22,6 +22,12 @@
 		7F2806CD2BBF1DD4007E26AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806CC2BBF1DD4007E26AB /* HomeView.swift */; };
 		7F2806CF2BBF1ED7007E26AB /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806CE2BBF1ED7007E26AB /* FavoriteView.swift */; };
 		7F2806D12BBF1EF0007E26AB /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806D02BBF1EF0007E26AB /* FavoriteViewController.swift */; };
+		7F2806DE2BBF375F007E26AB /* DetailNewsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806DD2BBF375F007E26AB /* DetailNewsScreenViewController.swift */; };
+		7F2806E02BBF3795007E26AB /* DetailNewsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806DF2BBF3795007E26AB /* DetailNewsScreenView.swift */; };
+		7F2806E22BBF37FC007E26AB /* CustomHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806E12BBF37FC007E26AB /* CustomHomeCell.swift */; };
+		7F2806E42BBF39B2007E26AB /* FlexibleHeightWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806E32BBF39B2007E26AB /* FlexibleHeightWidth.swift */; };
+		7F2806E62BBF5871007E26AB /* FavoriteCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806E52BBF5871007E26AB /* FavoriteCustomCell.swift */; };
+		7F2806E82BBF5DC0007E26AB /* CustomBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2806E72BBF5DC0007E26AB /* CustomBottomSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		7F2806CC2BBF1DD4007E26AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7F2806CE2BBF1ED7007E26AB /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		7F2806D02BBF1EF0007E26AB /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		7F2806DD2BBF375F007E26AB /* DetailNewsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsScreenViewController.swift; sourceTree = "<group>"; };
+		7F2806DF2BBF3795007E26AB /* DetailNewsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsScreenView.swift; sourceTree = "<group>"; };
+		7F2806E12BBF37FC007E26AB /* CustomHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeCell.swift; sourceTree = "<group>"; };
+		7F2806E32BBF39B2007E26AB /* FlexibleHeightWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleHeightWidth.swift; sourceTree = "<group>"; };
+		7F2806E52BBF5871007E26AB /* FavoriteCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCustomCell.swift; sourceTree = "<group>"; };
+		7F2806E72BBF5DC0007E26AB /* CustomBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 				7F2806932BBEBD9D007E26AB /* AppDelegate.swift */,
 				7F2806952BBEBD9D007E26AB /* SceneDelegate.swift */,
 				7F2806972BBEBD9D007E26AB /* ViewController.swift */,
+				7F2806E32BBF39B2007E26AB /* FlexibleHeightWidth.swift */,
+				7F2806E72BBF5DC0007E26AB /* CustomBottomSheet.swift */,
 				7F2806992BBEBD9D007E26AB /* Main.storyboard */,
 				7F28069C2BBEBD9E007E26AB /* Assets.xcassets */,
 				7F28069E2BBEBD9E007E26AB /* LaunchScreen.storyboard */,
@@ -94,7 +108,6 @@
 			children = (
 				7F2806AD2BBF19CD007E26AB /* HomeScreen */,
 				7F2806AC2BBF19A9007E26AB /* FavoriteScreen */,
-				7F2806AB2BBF1991007E26AB /* FavoriteDetailScreen */,
 				7F2806AA2BBF1979007E26AB /* DetailNewsScreenView */,
 			);
 			path = Flow;
@@ -109,17 +122,6 @@
 				7F2806C62BBF1B71007E26AB /* ViewController */,
 			);
 			path = DetailNewsScreenView;
-			sourceTree = "<group>";
-		};
-		7F2806AB2BBF1991007E26AB /* FavoriteDetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-				7F2806C52BBF1B63007E26AB /* Model */,
-				7F2806C42BBF1B59007E26AB /* View */,
-				7F2806C32BBF1B45007E26AB /* ViewModel */,
-				7F2806C22BBF1B3C007E26AB /* ViewController */,
-			);
-			path = FavoriteDetailScreen;
 			sourceTree = "<group>";
 		};
 		7F2806AC2BBF19A9007E26AB /* FavoriteScreen */ = {
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				7F2806CC2BBF1DD4007E26AB /* HomeView.swift */,
+				7F2806E12BBF37FC007E26AB /* CustomHomeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				7F2806CE2BBF1ED7007E26AB /* FavoriteView.swift */,
+				7F2806E52BBF5871007E26AB /* FavoriteCustomCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,37 +225,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7F2806C22BBF1B3C007E26AB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		7F2806C32BBF1B45007E26AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7F2806C42BBF1B59007E26AB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7F2806C52BBF1B63007E26AB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		7F2806C62BBF1B71007E26AB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7F2806DD2BBF375F007E26AB /* DetailNewsScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -266,6 +243,7 @@
 		7F2806C82BBF1B88007E26AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7F2806DF2BBF3795007E26AB /* DetailNewsScreenView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,13 +340,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2806DE2BBF375F007E26AB /* DetailNewsScreenViewController.swift in Sources */,
+				7F2806E22BBF37FC007E26AB /* CustomHomeCell.swift in Sources */,
 				7F2806982BBEBD9D007E26AB /* ViewController.swift in Sources */,
 				7F2806A82BBEBDF7007E26AB /* MainTabBarViewController.swift in Sources */,
 				7F2806B12BBF1A6F007E26AB /* BaseView.swift in Sources */,
 				7F2806942BBEBD9D007E26AB /* AppDelegate.swift in Sources */,
 				7F2806D12BBF1EF0007E26AB /* FavoriteViewController.swift in Sources */,
 				7F2806962BBEBD9D007E26AB /* SceneDelegate.swift in Sources */,
+				7F2806E42BBF39B2007E26AB /* FlexibleHeightWidth.swift in Sources */,
 				7F2806CD2BBF1DD4007E26AB /* HomeView.swift in Sources */,
+				7F2806E02BBF3795007E26AB /* DetailNewsScreenView.swift in Sources */,
+				7F2806E82BBF5DC0007E26AB /* CustomBottomSheet.swift in Sources */,
+				7F2806E62BBF5871007E26AB /* FavoriteCustomCell.swift in Sources */,
 				7F2806CB2BBF1DC9007E26AB /* HomeViewController.swift in Sources */,
 				7F2806CF2BBF1ED7007E26AB /* FavoriteView.swift in Sources */,
 				7F2806B82BBF1A97007E26AB /* BaseViewController.swift in Sources */,

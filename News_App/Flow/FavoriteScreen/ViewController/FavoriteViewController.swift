@@ -14,6 +14,8 @@ class FavoriteViewController: BaseViewController {
     
     override func viewDidLoad() {
         super .viewDidLoad()
+        contentView.tableView.delegate = self
+        contentView.tableView.dataSource = self
         
         addTargets()
         setupViews()
@@ -30,6 +32,28 @@ class FavoriteViewController: BaseViewController {
         contentView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+    
+}
+
+extension FavoriteViewController : UITableViewDataSource , UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FavoriteCustomCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = DetailNewsScreenViewController()
+        detailViewController.modalPresentationStyle = .fullScreen
+        present(detailViewController, animated: true)
     }
     
 }
